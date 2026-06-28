@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --navy: #1B3A5C;
+  --navy-deep: #102438;
+  --gold: #C9A227;
+  --paper: #FAF8F4;
+  --ink: #1C1C1C;
+  --ink-soft: #5B6470;
+  --line: #D9DCE1;
+  --error: #B3261E;
+  --success-bg: #EDF6EC;
+  --success-line: #2E7D32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, .serif {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
